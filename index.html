@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+
+        body{
+            background: url(1.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            overflow-x: hidden;
+        }
+
+        .carousel-item img{
+            width: 100%;
+            height: 80vh;
+            object-fit: center;
+        }
+        
+        .services .card{
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+        .services .card:hover{
+            transform: scale(1.05);
+        }
+
+        .team .card{
+            cursor: pointer;
+            transition: all 0.5s;
+            border-top: 4px solid rgba(0, 0, 255, 0.6);
+            border-bottom: 4px solid rgba(0, 0, 255, 0.6);
+        }
+        .team .card:hover{
+            transform: scale(1.05);
+        }
+        .team .card img{
+            border-radius: 50%;
+            width: 40%;
+            margin: auto;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+    <nav class="navbar navbar-expand-lg bg-light px-3 shadow fixed-top" data-aos="fade-down" data-aos-offset="200" data-aos-duration="500">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="font-family: cursive; font-size: 24px; font-weight:550;">Counting_<span class="text-success">Shutters</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-3" style="font-size: 18px;">
+              <li class="nav-item">
+                <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="photo1.jpg" class=" img-fluid" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="photo2.jpg" class="img-fluid" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="photo3.jpg" class=" img-fluid" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <section class="about my-4" id="about">
+        <div class="container">
+            <h1 class="text-center px-3 py-2" style="font-family: cursive;" data-aos="fade-down" data-aos-duration="500">About <span class="text-primary">Me</span></h1><hr style="width: 25vw; margin: auto;">
+
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+                    <h2 class="py-2">What do you <span class="text-primary">want to know?</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio veritatis, perferendis fugiat ad laudantium maiores, rem aliquam placeat sint esse maxime nisi! Vitae illum error, consequuntur deleniti doloremque ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tenetur laborum voluptate nostrum ea aut reprehenderit omnis, nesciunt perferendis voluptatum error sint aspernatur ad, excepturi at veniam necessitatibus dolorum asperiores?</p>
+
+                    <button class="btn btn-primary shadow" style="font-size: 21px;">Read More</button>
+
+                    <div class="accordion my-3" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              My Hobbies
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              My Aim
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                             My Choices
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriateour default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 m-auto text-center" data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+                    <img src="user.jpg" style="width: 70%; border-radius: 15px;" class="img-fluid">
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+      <section class="services my-4 py-5" id="services">
+        <div class="container">
+            <h1 class="text-center px-3 py-2" style="font-family: cursive;" data-aos="fade-down" data-aos-duration="500">Our <span class="text-primary">Services</span></h1><hr style="width: 25vw; margin: auto;">
+
+            <div class="row" data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="card my-3 text-center shadow">
+                        <div class="card-body">
+                            <i class="fa-solid fa-code bg-primary text-white rounded p-2" style="font-size: 17px;"></i>
+                          <h4 class="card-title text-primary" style="font-weight: 550;">Web Development</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="card my-3 text-center shadow">
+                        <div class="card-body bg-primary rounded">
+                            <i class="fa-solid fa-code bg-white text-primary rounded p-2" style="font-size: 17px;"></i>
+                          <h4 class="card-title text-white" style="font-weight: 550;">App Development</h4>
+                          <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-light text-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="card my-3 text-center shadow">
+                        <div class="card-body">
+                            <i class="fa-solid fa-code bg-primary text-white rounded p-2" style="font-size: 17px;"></i>
+
+                          <h4 class="card-title text-primary" style="font-weight: 550;">Cloud Services</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3" data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="card my-3 text-center shadow">
+                        <div class="card-body bg-primary rounded">
+                            <i class="fa-solid fa-code bg-white text-primary rounded p-2" style="font-size: 17px;"></i>
+                          <h4 class="card-title text-white" style="font-weight: 550;">Web Design</h4>
+                          <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-light text-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="card my-3 text-center shadow">
+                        <div class="card-body">
+                            <i class="fa-solid fa-code bg-primary text-white rounded p-2" style="font-size: 17px;"></i>
+
+                          <h4 class="card-title text-primary" style="font-weight: 550;">Ecommerce Service</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="card my-3 text-center shadow">
+                        <div class="card-body bg-primary rounded">
+                            <i class="fa-solid fa-code bg-white text-primary rounded p-2" style="font-size: 17px;"></i>
+                          <h4 class="card-title text-white" style="font-weight: 550;">Shopify Development</h4>
+                          <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-light text-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+      <section class="team my-4 py-5" id="team">
+        <div class="container">
+            <h1 class="text-center px-3 py-2" style="font-family: cursive;" data-aos="fade-down">Our <span class="text-primary">Team</span></h1><hr style="width: 25vw; margin: auto;">
+
+            <div class="row mt-4">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                    <div class="card shadow "  data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                        <img src="user2.jpg" class="card-img-top mt-4 mb-2 p-1 border-primary" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title text-primary">Soumya Kar</h4><hr style="width: 200px; margin: auto;">
+                          <h6 class="py-2">Frontend Developer</h6>
+                          <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                    <div class="card shadow"  data-aos="flip-right"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                        <img src="user.jpg" class="card-img-top mt-4 mb-2 p-1 border-primary" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title text-primary">Soumya Kar</h4><hr style="width: 200px; margin: auto;">
+                          <h6 class="py-2">Backend Developer</h6>
+                          <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                    <div class="card shadow"  data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                        <img src="user3.png" class="card-img-top mt-4 mb-2 p-1 border-primary" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title text-primary">Soumya Kar</h4><hr style="width: 200px; margin: auto;">
+                          <h6 class="py-2">FullStack Developer</h6>
+                          <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                    <div class="card shadow "  data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                        <img src="user2.jpg" class="card-img-top mt-4 mb-2 p-1 border-primary" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title text-primary">Soumya Kar</h4><hr style="width: 200px; margin: auto;">
+                          <h6 class="py-2">Frontend Developer</h6>
+                          <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                    <div class="card shadow"  data-aos="flip-right"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                        <img src="user.jpg" class="card-img-top mt-4 mb-2 p-1 border-primary" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title text-primary">Soumya Kar</h4><hr style="width: 200px; margin: auto;">
+                          <h6 class="py-2">Backend Developer</h6>
+                          <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                    <div class="card shadow"  data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                        <img src="user3.png" class="card-img-top mt-4 mb-2 p-1 border-primary" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title text-primary">Soumya Kar</h4><hr style="width: 200px; margin: auto;">
+                          <h6 class="py-2">FullStack Developer</h6>
+                          <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+      <section class="contact my-4 py-5" id="contact">
+        <div class="container">
+            <h1 class="text-center px-3 py-2" style="font-family: cursive;" data-aos="fade-down">Feel free <span class="text-primary">to Connect</span></h1><hr style="width: 35vw; margin: auto;">
+
+            <div class="row mt-5">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 p-4 rounded" style="background-color: rgba(216, 214, 214, 0.548);">
+
+                    <form class="row g-3">
+                        <div class="col-md-6 " data-aos="zoom-out-right">
+                          <label for="inputEmail4" class="form-label">First Name</label>
+                          <input type="text" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6" data-aos="zoom-out-left">
+                          <label for="inputPassword4" class="form-label">Last Name</label>
+                          <input type="text" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12" data-aos="fade-right">
+                          <label for="inputAddress" class="form-label">Address</label>
+                          <input type="text" class="form-control" id="inputAddress" >
+                        </div>
+                        
+                        <div class="col-md-6" data-aos="zoom-out-right">
+                          <label for="inputCity" class="form-label">Phone No</label>
+                          <input type="number" class="form-control" id="inputCity">
+                        </div>
+                        
+                        <div class="col-md-6" data-aos="zoom-out-left">
+                          <label for="inputZip" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary w-100 mt-2">Sign in</button>
+                        </div>
+                      </form>
+
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+      </section>
+
+
+      <section class="footer mb-0">
+        <div class="container-fluid bg-primary text-white text-center mb-0" >
+            <h5 class="py-3"><i class="fa-regular fa-copyright"></i> All Rights are reserved 2023</h5>
+        </div>
+      </section>
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>
